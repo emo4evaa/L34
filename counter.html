@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Counter App</title>
+</head>
+
+<body onload="showValue()">
+
+    <h2>Counter App</h2>
+
+    <h1 id="number">0</h1>
+
+    <button onclick="increase()">Increase</button>
+
+    <button onclick="decrease()">Decrease</button>
+
+    <button onclick="reset()">Reset</button>
+
+    <script >
+        var value = 0;
+
+function showValue() {
+    document.getElementById("number").innerHTML = value;
+}
+
+function increase() {
+    value = value + 1;
+    document.getElementById("number").innerHTML = value;
+}
+
+function decrease() {
+    value = value - 1;
+    document.getElementById("number").innerHTML = value;
+}
+
+function reset() {
+    value = 0;
+    document.getElementById("number").innerHTML = value;
+}
+
+
+    </script>
+
+</body>
+
+</html>
